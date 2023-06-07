@@ -1,8 +1,7 @@
-import React, {Component} from "react";
+import React from "react";
 import { Players } from "../Shared/ListOfPlayers";
-export default class Player extends Component{
-    render(){
-        return(
+export default function Player(){   
+    return(
             <div className="container">
                 {Players.map((player)=>(
                     <div className="column">
@@ -16,5 +15,4 @@ export default class Player extends Component{
                 ))}
             </div>
         )
-    }
 }
